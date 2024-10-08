@@ -35,10 +35,8 @@ public class _06_TargetTwoPlayers {
             if (d1 < s2) { // 2nd sector (bigger radius than the 1st one's)
                 p1 = 10;
             }
-            else {
-                if (d1 < s3) { // 3rd sector (far away from the centre)
+            else { // 3rd sector (far away from the centre)
                     p1 = 5;
-                }
                 // else --> Out of the target's area (d1 > s3) => p1 = 0
             }
         }
@@ -50,10 +48,8 @@ public class _06_TargetTwoPlayers {
             if (d2 < s2) { // -||-
                 p2 = 10;
             }
-            else {
-                if (d2 < s3) { // -||-
+            else { // -||-
                     p2 = 5;
-                }
                 // else --> Out of the target's area (d2 > s3) => p2 = 0
             }
         }

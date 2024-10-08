@@ -31,7 +31,8 @@ public class _07_Triangle {
             if (a != b && a != c && b != c) { // Three unequal sides (1)
                 typeTriangle = 1;
                 System.out.println("1. - Three different sides");
-            } else {
+            } 
+            else {
                 if (twoEqualSides) { // Two equal sides (2)
                     typeTriangle = 2;
                     System.out.println("2. - Isosceles triangle");
@@ -61,24 +62,25 @@ public class _07_Triangle {
             if (typeTriangle == 1) {
                 System.out.println("P = a + b + c" + " => " + "P = " + (a + b + c) + " cm");
                 System.out.println("S = " + s + " cm2");
-            } else {
+            }
+            else {
                 if (typeTriangle == 2) {
                     if (a == b) {
                         System.out.println("P = 2 * a + c [a = b]" + " => " + "P = " + (2 * a + c) + " cm");
-                    } else {
+                    }
+                    else {
                         if (a == c) {
                             System.out.println("P = 2 * a + b [a = c]" + " => " + "P = " + (2 * a + b) + " cm");
-                        } else {
+                        }
+                        else {
                             System.out.println("P = a + 2 * b [b = c]" + " => " + "P = " + (2 * b + a) + " cm");
                         }
                     }
                     System.out.println("S = " + s + " cm2");
                 }
-                else {
-                    if (typeTriangle == 3) {
+                else { // (typeTriangle == 3)
                         System.out.println("P = 3 * a [a = b = c]" + " => " + "P = " + 3 * a + " cm");
                         System.out.println("S = " + s + " cm2");
-                    } // ..
                 }
             }
         }
