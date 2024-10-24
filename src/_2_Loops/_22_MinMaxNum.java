@@ -27,7 +27,7 @@ public class _22_MinMaxNum {
                         min = num;
                     }
                     else { // (false above)
-                        if (num > max) {
+                        if (num > max) { // compared to first value of max, if found before the loop
                             max = num;
                         }
                     }
@@ -46,7 +46,7 @@ public class _22_MinMaxNum {
             System.out.println("Min number is " + min);
             System.out.println("Max number is " + max);
         }
-        
+
         kb.close();
     }
 }
