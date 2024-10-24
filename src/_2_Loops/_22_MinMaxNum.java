@@ -27,7 +27,7 @@ public class _22_MinMaxNum {
                         min = num;
                     }
                     else { // (false above)
-                        if (num > max) { // compared to first value of max, if found before the loop
+                        if (num > max) { // compared to first value of max if found before the loop
                             max = num;
                         }
                     }
