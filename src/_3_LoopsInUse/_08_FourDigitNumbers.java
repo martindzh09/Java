@@ -4,9 +4,9 @@ public class _08_FourDigitNumbers {
     public static void main(String[] args) {
 
         int sum;
-        boolean twoSameDigits = false;
 
         for (int i = 1000; i <= 9999; i++) {
+            boolean twoSameDigits = false;
 
             int d1 = i % 10; // 4th digit
             int d2 = (i / 10) % 10; // 3rd digit
@@ -15,8 +15,9 @@ public class _08_FourDigitNumbers {
 
             sum = d1 + d2 + d3 + d4;
 
-            if (sum % 2 == 0) { // at least two of the digits are equal
-                // sum of two equal digits is always an even number
+            if ((d1 == d2) || (d1 == d3) || (d1 == d4) ||
+                    (d2 == d3) || (d2 == d4) || (d3 == d4)) {
+
                 twoSameDigits = true;
             }
 
