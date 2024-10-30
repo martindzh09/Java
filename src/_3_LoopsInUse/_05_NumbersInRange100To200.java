@@ -4,7 +4,7 @@ public class _05_NumbersInRange100To200 {
     public static void main(String[] args) {
 
         int d1, d2, d3; // digits of numbers
-        int sumDigits = 0;
+        int sumDigits;
 
         for (int i = 100; i <= 200; i++) {
             d1 = i % 10;

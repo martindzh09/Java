@@ -10,7 +10,7 @@ public class _05_SumDigitsK {
         System.out.println("Input k: ");
         int k = kb.nextInt();
 
-        int sumDigits = 0;
+        int sumDigits;
 
         for (int i = 100; i <= 999; i++) {
             sumDigits = i % 10;
