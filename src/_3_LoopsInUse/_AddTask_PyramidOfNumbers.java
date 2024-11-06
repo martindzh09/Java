@@ -7,8 +7,13 @@ public class _AddTask_PyramidOfNumbers {
 
         Scanner kb = new Scanner(System.in);
 
-        System.out.println("Input n: ");
-        int n = kb.nextInt();
+        int n;
+
+        do { // wrong input check
+            System.out.println("Input n: ");
+            n = kb.nextInt();
+        }
+        while (n <= 0);
 
         // a variable needed to keep numbers increasing after each row
         int currentNum = 1;
