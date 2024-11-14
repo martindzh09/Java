@@ -17,8 +17,8 @@ public class _04_MonthTemperatures {
 
             validMonth = month.equals("January") || month.equals("February") || month.equals("March") ||
                     month.equals("April") || month.equals("May") || month.equals("June") || month.equals("July") ||
-                        month.equals("August") || month.equals("September") || month.equals("October") ||
-                            month.equals("November") || month.equals("December");
+                    month.equals("August") || month.equals("September") || month.equals("October") ||
+                    month.equals("November") || month.equals("December");
         }
         while (!validMonth);
 
@@ -26,15 +26,15 @@ public class _04_MonthTemperatures {
 
         switch (month) {
             case "January": case "March": case "May": case "July":
-                case "August": case "October": case "December":
+            case "August": case "October": case "December":
 
-                    monthDays = 31;
+                monthDays = 31;
                 break;
 
             case "February": case "April": case "June":
-                case "September": case "November":
+            case "September": case "November":
 
-                    monthDays = 30;
+                monthDays = 30;
                 break;
         }
         // variable for specified temperature
