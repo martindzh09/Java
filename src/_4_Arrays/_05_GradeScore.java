@@ -13,7 +13,7 @@ public class _05_GradeScore {
             System.out.println("Students in the class: ");
             students = kb.nextInt();
         }
-        while (students > 32);
+        while (students > 32 || students <= 1);
 
         double[] averageGrade = new double[students];
 
