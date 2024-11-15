@@ -41,7 +41,7 @@ public class _04_MonthTemperatures {
                 boolean validAnswer = false;
                 // Check for leap or non-leap year (different values)
                 do {
-                    System.out.println("Is this year leap or not?");
+                    System.out.println("Is this year leap or not? 'Yes' or 'No'.");
                     String answer = kb.nextLine();
 
                     if (answer.equals("Yes")) {
