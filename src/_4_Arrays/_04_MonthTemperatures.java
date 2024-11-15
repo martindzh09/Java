@@ -31,11 +31,31 @@ public class _04_MonthTemperatures {
                 monthDays = 31;
                 break;
 
-            case "February": case "April": case "June":
+            case "April": case "June":
             case "September": case "November":
 
                 monthDays = 30;
                 break;
+
+            case "February":
+                boolean validAnswer = false;
+                // Check for leap or non-leap year (different values)
+                do {
+                    System.out.println("Is this year leap or not?");
+                    String answer = kb.nextLine();
+
+                    if (answer.equals("Yes")) {
+                        monthDays = 29;
+                        validAnswer = true;
+                    }
+                    if (answer.equals("No")) {
+                        monthDays = 28;
+                        validAnswer = true;
+                    }
+                }
+                while (!validAnswer);
+                break;
+
         }
         // variable for specified temperature
         double preferredTemp;
@@ -55,7 +75,7 @@ public class _04_MonthTemperatures {
         // assigning values for each day (of month)
         for (int i = 0; i < monthDays; i++) {
             do {
-                System.out.println("Input the average temperature for today " + (i + 1) + " " + month);
+                System.out.println("Input the average temperature for today (" + (i + 1) + " " + month + "):");
                 dailyTemp[i] = kb.nextDouble();
             } // varying-normal range of temperatures check
             while ((dailyTemp[i] < -40 || dailyTemp[i] > 55));
@@ -66,7 +86,7 @@ public class _04_MonthTemperatures {
         }
 
         System.out.println("In " + month + ", " + daysPreferredTemp +
-                " days had an average temperature of " + preferredTemp + " degrees Celsius");
+                " days had an average temperature of " + preferredTemp + " degrees Celsius.");
 
         kb.close();
     }
