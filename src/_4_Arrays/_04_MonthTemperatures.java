@@ -78,7 +78,7 @@ public class _04_MonthTemperatures {
                 System.out.println("Input the average temperature for today (" + (i + 1) + " " + month + "):");
                 dailyTemp[i] = kb.nextDouble();
             } // varying-normal range of temperatures check
-            while ((dailyTemp[i] < -40 || dailyTemp[i] > 55));
+            while ((dailyTemp[i] < -40) || (dailyTemp[i] > 55));
 
             if (dailyTemp[i] == preferredTemp) {
                 daysPreferredTemp++;
