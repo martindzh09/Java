@@ -26,7 +26,7 @@ public class _00_CharASCII {
         char b = 'H';
         char c = (char)(b + 32);
 
-        System.out.println("[c = (char)((int)b + 32)] -> c = " + c);
+        System.out.println("[c = (char)((int)b + 32)] -> c = '" + c + "'");
 
     }
 }
