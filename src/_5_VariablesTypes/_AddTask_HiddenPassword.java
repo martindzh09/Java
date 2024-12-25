@@ -3,7 +3,6 @@ package _5_VariablesTypes;
 import java.util.*;
 
 public class _AddTask_HiddenPassword {
-	
 	public static void main (String[] args) {
 
 		Scanner kb = new Scanner(System.in);
