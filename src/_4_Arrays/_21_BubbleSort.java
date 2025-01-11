@@ -28,8 +28,7 @@ public class _21_BubbleSort {
             do {
                 System.out.println("Input data for element [" + i + "]: ");
                 array[i] = kb.nextDouble();
-            }
-            while ((array[i] < -500.0) || (array[i] > 500.0));
+            } while ((array[i] < -500.0) || (array[i] > 500.0));
         }
 
         double tempValue; // needed when replacing values

@@ -27,8 +27,7 @@ public class _20_SelectionSort {
             do {
                 System.out.println("Input data for element [" + i + "]: ");
                 array[i] = kb.nextInt();
-            }
-            while ((array[i] < - 1000) || (array[i] > 1000));
+            } while ((array[i] < - 1000) || (array[i] > 1000));
         }
 
         int minElement;
