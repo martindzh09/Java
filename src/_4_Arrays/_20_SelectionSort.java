@@ -17,8 +17,7 @@ public class _20_SelectionSort {
                 System.out.println("Wrong input data.");
                 System.out.println("Input valid data for size: ");
             }
-        }
-        while ((n <= 0) || (n > 50));
+        } while ((n <= 0) || (n > 50));
 
         // declaring new int-type array sized to 'n'
         int[] array = new int[n];

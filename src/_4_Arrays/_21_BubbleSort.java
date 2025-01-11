@@ -17,8 +17,7 @@ public class _21_BubbleSort {
                 System.out.println("Wrong input data.");
                 System.out.println("Input valid data for size: ");
             }
-        }
-        while ((n <= 0) || (n > 100));
+        } while ((n <= 0) || (n > 100));
 
         // declaring new double-type array sized to 'n'
         double[] array = new double[n];
