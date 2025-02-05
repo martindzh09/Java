@@ -1,6 +1,6 @@
 package _6_Methods;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class _08_ArithmeticArrays {
 
