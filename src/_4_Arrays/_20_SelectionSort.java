@@ -51,13 +51,13 @@ public class _20_SelectionSort {
 
             // 3.0 Sorting elements - values replacement
             temporary = array[index];
-            // 3.1 Position of min value is replaced with element currently iterated
+            // 3.1 Position of min value is replaced with an element currently iterated
             array[index] = array[i];
-            // 3.2 Iterated position is taken by the min value found
+            // 3.2 Iterated position is taken by min value found
             array[i] = temporary;
         }
 
-        // Printing sorted array
+        // Printing a sorted array
         System.out.println("\n" + "After sorting elements -> ");
 
         for (int i = 0; i < n; i++) {
